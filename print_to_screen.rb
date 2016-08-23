@@ -30,13 +30,13 @@ x = 1
 100.times do
 	puts x
 	x = x + 1
-	if(x % 3 == 0)
-		puts "Mined"
+		if(x % 3 and x % 5)
+			puts "Mined Minds"
+		end
+		if(x % 3 == 0)
+			puts "Mined"
+		end
+		if(x % 5 == 0)
+			puts "Minds"
+		end
 	end
-	if(x % 5 == 0)
-		puts "Minds"
-	end
-	if(x % 3 and x % 5)
-		puts "Mined Minds"
-	end
-end
