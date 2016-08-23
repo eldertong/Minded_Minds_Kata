@@ -26,17 +26,30 @@
 # end
 
 
-x = 1
-100.times do
-	puts x
-	x = x + 1
-		if(x % 3 and x % 5)
-			puts "Mined Minds"
-		end
-		if(x % 3 == 0)
-			puts "Mined"
-		end
-		if(x % 5 == 0)
-			puts "Minds"
-		end
-	end
+# x = 1
+# 100.times do
+# 	puts x
+# 	x = x + 1
+# 	if(x % 3 and x % 5)
+# 		puts "Mined Minds"
+# 	elsif(x % 3 == 0)
+# 		puts "Mined"
+# 	elsif(x % 5 == 0)
+# 		puts "Minds"
+# 	else
+# 		puts y
+# 	end
+# end
+
+
+1.upto(100) do |x|
+      if x % 5 == 0 and x % 3 == 0
+        puts "Mined Minds"
+      elsif x % 5 == 0
+        puts "Mined"
+      elsif x % 3 == 0
+        puts "Minds"
+      else
+        puts x
+      end
+    end
