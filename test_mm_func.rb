@@ -1,6 +1,6 @@
 
 require "minitest/autorun"
-
+require_relative "mm_func.rb"
 
 
 class TestMinedMindsFunction < Minitest::Test 
