@@ -1,12 +1,12 @@
 
 require "minitest/autorun"
-require_relative "mm_func.rb"
+require_relative "wadam.rb"
 
 
 class TestMinedMindsFunction < Minitest::Test 
-	def test_1_equals_1
-		assert_equal(1, 1)
-	end
+	# def test_1_equals_1
+	# 	assert_equal(1, 1)
+	# end
 	def test_1_returns_1
 		assert_equal(1, mined_minds(1))
 	end
@@ -28,5 +28,8 @@ class TestMinedMindsFunction < Minitest::Test
 	end
 	def test_30_returns_minedminds
 		assert_equal("minedminds", mined_minds(30))
+	end
+	def test_265_returns_minds
+		assert_equal("minds", mined_minds(265))
 	end
 end
